@@ -53,9 +53,12 @@
 </head>
 
 <body class="bg-background p-2">
-<header class="h-32 px-28 bg-background2 flex items-center justify-between">
-  <div class="flex items-center gap-16">
-    <img class="h-14" src="img/logo.png" alt="logo">
+<header class="relative h-32 px-28 bg-background2 flex items-center justify-between overflow-hidden">
+  <div class="bg-[#270B27] blur-[50px] absolute left-28 -top-28 z-0 w-[200px] h-[200px]"></div>
+  <div class="flex items-center gap-16 z-10">
+    <a href="#">
+      <img class="h-14" src="img/logo.png" alt="logo">
+    </a>
     <nav class="text-white/60 flex items-center gap-16">
       <a class="uppercase text-base tracking-wide" href="#">Product</a>
       <a class="uppercase text-base tracking-wide" href="#">Explore</a>
@@ -63,8 +66,10 @@
       <a class="uppercase text-base tracking-wide" href="#">AI Analysis</a>
     </nav>
   </div>
-  <button class="uppercase bg-white/10 px-8 text-white h-10">Get Member Access</button>
+  <button class="uppercase bg-white/10 px-8 text-white h-10 z-10">Get Member Access</button>
+  <div class="bg-[#270B27] blur-[50px] absolute right-28 -bottom-28 z-0 w-[200px] h-[200px]"></div>
 </header>
+<main></main>
 </body>
 
 </html>
