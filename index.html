@@ -37,8 +37,19 @@
       theme: {
         colors: {
           white: "#fff",
-          background: "#06020C",
-          background2: "#0F081D"
+          black: {
+            900: "#06020C",
+            800: "#0F081D",
+          },
+          purple: {
+            700: "#270B27",
+          },
+          blue: {
+            900: "#4A4BA6",
+          },
+          pink: {
+            900: "#E547B6"
+          }
         }
       }
     }
@@ -52,9 +63,9 @@
   <!--  </style>-->
 </head>
 
-<body class="bg-background p-2">
-<header class="relative h-32 px-28 bg-background2 flex items-center justify-between overflow-hidden">
-  <div class="bg-[#270B27] blur-[50px] absolute left-28 -top-28 z-0 w-[200px] h-[200px]"></div>
+<body class="bg-black-900 p-2">
+<header class="relative h-32 px-28 bg-black-800 flex items-center justify-between overflow-hidden">
+  <div class="bg-purple-700 blur-[50px] absolute left-28 -top-28 z-0 w-[200px] h-[200px]"></div>
   <div class="flex items-center gap-16 z-10">
     <a href="#">
       <img class="h-14" src="img/logo.png" alt="logo">
@@ -66,10 +77,30 @@
       <a class="uppercase text-base tracking-wide" href="#">AI Analysis</a>
     </nav>
   </div>
-  <button class="uppercase bg-white/10 px-8 text-white h-10 z-10">Get Member Access</button>
-  <div class="bg-[#270B27] blur-[50px] absolute right-28 -bottom-28 z-0 w-[200px] h-[200px]"></div>
+  <button class="uppercase bg-white/10 px-8 text-white h-10 z-10 text-sm font-bold tracking-wider">Get Member Access
+  </button>
+  <div class="bg-purple-700 blur-[50px] absolute right-28 -bottom-28 z-0 w-[200px] h-[200px]"></div>
 </header>
-<main></main>
+<main>
+  <section class="relative px-20 text-white">
+    <img src="img/grape-no-text.png" alt="logo">
+    <h1 class="text-6xl mt-6">
+      <span class="font-semibold block">GRAPE,</span>
+      NFT Colection
+    </h1>
+    <h2 class="uppercase tracking-wider w-5/12 text-white/60 mt-2">
+      A private members only collective of 1,000 dedicated NFT collectors and artist.
+    </h2>
+    <button
+      class="mt-10 flex items-center gap-2 bg-gradient-to-br from-blue-900 to-pink-900 uppercase border border-solid border-white/30 px-20 h-14 text-base font-bold tracking-wider">
+      Get Start
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M7.5 8L11 12L7.5 16" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M15.5 16L15.5 8" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+  </section>
+</main>
 </body>
 
 </html>
