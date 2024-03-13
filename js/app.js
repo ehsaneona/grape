@@ -29,7 +29,16 @@ tailwind.config = {
       },
       backgroundImage: {
         'pattern': "url('/img/pattern.png')",
-      }
+      },
+      animation: {
+        fade: 'fadeIn 1s ease',
+      },
+      keyframes: {
+        'fadeIn': {
+          from: {opacity: 0, transform: 'translateY(50px)'},
+          to: {opacity: 1, transform: 'translateY(0)'},
+        },
+      },
     }
   }
 }
