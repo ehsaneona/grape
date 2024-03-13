@@ -1,0 +1,108 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grape - Launchpad</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            white: "#fff",
+            black: {
+              900: "#06020C",
+              800: "#0F081D",
+            },
+            purple: {
+              800: "#2E1D41",
+              700: "#270B27",
+            },
+            blue: {
+              900: "#4A4BA6",
+            },
+            pink: {
+              900: "#E547B6"
+            },
+            green: {
+              900: "#01AEA5"
+            },
+            gray: {
+              900: "#d9d9d9"
+            }
+          },
+          backgroundImage: {
+            'pattern': "url('/img/pattern.png')",
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html {
+      font-family: "Barlow", serif !important;
+    }
+  </style>
+</head>
+
+<body class="bg-[#4C4CA6]/30 backdrop-blur-md h-screen">
+<div
+  class="fixed top-1/2 left-1/2 bg-[#06020C] w-full max-w-[378px] -translate-x-1/2 -translate-y-1/2 overflow-hidden mt-20 min-h-80">
+  <div class="p-6 text-white">
+    <div class="flex items-center border border-solid border-white/5 bg-black-900 h-14 w-full">
+      <div class="text-base text-white w-full flex items-center justify-center h-full bg-white/5">Stake</div>
+      <div class="text-base text-white w-full flex items-center justify-center h-full">Unstake</div>
+    </div>
+    <div class="mt-6">
+      <div class="font-medium">
+        Staking Our Coin
+      </div>
+      <p class="mt-1 text-sm text-white/50">
+        Helps to secure the protocol in exchange for protocol incentives.
+      </p>
+    </div>
+    <div class="mt-6">
+      <div class="flex items-center justify-between font-medium">
+        <div class="text-sm">Stake OUR Coin</div>
+        <div class="text-white text-xs">
+          <span class="text-white/50">Available:</span>
+          600.00 Our Coin
+        </div>
+      </div>
+      <div class="border border-solid border-white/5 p-4 flex items-center justify-between mt-2">
+        <div class="flex items-center gap-4">
+          <img width="30" height="30" src="img/grape-no-text.png" alt="">
+          <span class="text-sm">600.00 OUR Coin</span>
+        </div>
+        <button
+          class="uppercase text-xs bg-black-900 text-white font-semibold w-14 h-6 relative before:w-full before:h-full before:scale-x-[1.15] before:scale-y-[1.35] before:absolute before:top-[50%] before:left-[50%] before:-z-10 before:translate-x-[-50%] before:translate-y-[-50%] before:from-blue-900 before:to-pink-900 before:bg-gradient-to-br">
+          Max
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>
