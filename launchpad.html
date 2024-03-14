@@ -33,28 +33,41 @@
 </head>
 
 <body class="bg-black-900 text-white">
-<div class="p-2">
-  <header class="relative h-32 px-28 bg-black-800 flex items-center justify-between overflow-hidden">
+<div class="lg:p-2">
+  <header
+    class="relative h-24 lg:h-32 px-5 lg:12 xl:px-28 bg-black-800 flex items-center justify-between overflow-hidden">
     <div class="bg-purple-700 blur-[50px] absolute left-28 -top-28 z-0 w-[200px] h-[200px]"></div>
-    <div class="flex items-center gap-16 z-10">
+    <div class="flex items-center justify-between lg:justify-start w-full lg:w-fit gap-16 z-10">
+      <svg class="block lg:hidden" width="24" height="24" viewBox="0 0 24 24" fill="none"
+           xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.49762 12H18.5027" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M5.49762 16.0017H18.5027" stroke="white" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round"/>
+        <path d="M5.49731 7.99832H18.5024" stroke="white" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round"/>
+      </svg>
       <a href="#">
         <img class="h-14" src="img/logo.png" alt="logo">
       </a>
-      <nav class="text-white/60 flex items-center gap-16">
-        <a class="uppercase text-base tracking-wide" href="#">Product</a>
-        <a class="uppercase text-base tracking-wide" href="#">Explore</a>
-        <a class="uppercase text-base tracking-wide" href="#">Save & Share</a>
-        <a class="uppercase text-base tracking-wide" href="#">AI Analysis</a>
+      <nav class="text-white/60 hidden lg:flex items-center gap-16">
+        <a class="uppercase text-base tracking-wide hover:text-white transition" href="#">Product</a>
+        <a class="uppercase text-base tracking-wide hover:text-white transition" href="#">Explore</a>
+        <a class="uppercase text-base tracking-wide hover:text-white transition" href="#">Save & Share</a>
+        <a class="uppercase text-base tracking-wide hover:text-white transition" href="#">AI Analysis</a>
       </nav>
+      <div></div>
     </div>
-    <button class="uppercase bg-white/10 px-8 text-white h-10 z-10 text-sm font-bold tracking-wider">Get Member Access
+    <button
+      class="hidden lg:block uppercase bg-white/10 px-8 text-white h-10 z-10 text-sm font-bold tracking-wider hover:bg-white hover:text-black-900 transition">
+      Get Member Access
     </button>
     <div class="bg-purple-700 blur-[50px] absolute right-28 -bottom-28 z-0 w-[200px] h-[200px]"></div>
   </header>
 </div>
 <main>
-  <section class="relative mt-32">
-    <svg class="absolute top-[-80%] left-[15%]" width="981" height="853" viewBox="0 0 981 853" fill="none"
+  <section class="relative mt-20 lg:mt-32">
+    <svg class="absolute w-full h-full lg:w-[unset] lg:h-[unset] lg:top-[-80%] lg:left-[15%]" width="981" height="853"
+         viewBox="0 0 981 853" fill="none"
          xmlns="http://www.w3.org/2000/svg">
       <g filter="url(#filter0_f_123_443)">
         <path
@@ -91,32 +104,36 @@
         </linearGradient>
       </defs>
     </svg>
-    <div class="flex justify-center items-center flex-col max-w-xl mx-auto">
-      <img width="100" height="100" src="img/grape-no-text.png" alt="logo">
-      <h1 class="mt-6 text-6xl">
+    <div class="flex justify-center items-center flex-col max-w-xl mx-auto px-6 lg:px-0">
+      <img class="w-20 lg:h-24" src="img/grape-no-text.png" alt="logo">
+      <h1 class="mt-6 text-4xl lg:text-6xl">
         <span class="font-semibold">GRAPE,</span>
         Launch
       </h1>
-      <p class="mt-2 uppercase text-lg text-white/60 tracking-[0.72px] text-center">A private members only collective of
-        1,000 dedicated NFT collectors and artist.</p>
-      <button
-        class="mt-10 flex items-center gap-2 bg-gradient-to-br from-blue-900 to-pink-900 uppercase border border-solid border-white/30 px-[64px] h-14 text-base font-bold tracking-wider">
-        Apply For Launchpad
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M7.5 8L11 12L7.5 16" stroke="white" stroke-width="1.5" stroke-linecap="round"
-                stroke-linejoin="round"/>
-          <path d="M15.5 16L15.5 8" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </button>
+      <p class="mt-2 uppercase text-base lg:text-lg text-white/60 tracking-[0.72px] text-center leading-8">
+        A private members only collective of 1,000 dedicated NFT collectors and artist.
+      </p>
+      <div class="px-3 lg:px-0 mt-8 lg:mt-10">
+        <button
+          class="flex items-center gap-2 bg-gradient-to-br from-blue-900 to-pink-900 uppercase border border-solid border-white/30 px-10 lg:px-[64px] h-14 text-base font-bold tracking-wider">
+          Apply For Launchpad
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.5 8L11 12L7.5 16" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round"/>
+            <path d="M15.5 16L15.5 8" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
     </div>
   </section>
-  <section class="mt-52 mx-auto max-w-[1200px]">
-    <h2 class="text-5xl text-center uppercase">
-      <span class="block">F<span class="text-white/60">ea</span>tured</span>
+  <section class="mt-20 lg:mt-52 mx-auto max-w-[1200px]">
+    <h2 class="text-3xl lg:text-5xl text-center uppercase">
+      <span class=lg:block">F<span class="text-white/60">ea</span>tured</span>
       La<span class="text-white/60">un</span>ch
     </h2>
-    <div class="flex items-center border border-solid border-white/10 mt-16 mb-80">
-      <div class="flex flex-col p-8 w-full">
+    <div
+      class="flex flex-col-reverse lg:flex-row items-center lg:border border-solid border-white/10 mt-8 lg:mt-16 mb-80 px-6 lg:px-0">
+      <div class="flex flex-col p-6 lg:p-8 w-full">
         <div class="flex items-center gap-4 text-2xl font-medium">
           <img class="w-12 h-12" src="/img/nft.png" alt="nft">
           Pixelmon
@@ -126,7 +143,8 @@
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M19.4004 7.83826L21 5.41653L18.7194 5.75804C18.7194 5.75804 16.9631 3.39956 14.3867 4.1828C12.3006 4.81718 11.461 7.27783 11.6546 8.79858C8.74346 8.40842 6.04541 7.05988 3.98757 4.96507C2.91243 11.3643 5.01405 14.47 8.16746 16.2379C6.65157 17.2829 4.84086 17.8151 3 17.7567C4.63751 19.7309 7.98649 20.0705 9.8293 19.9537C16.2568 19.548 19.8305 14.4963 19.4257 8.06983L19.4004 7.83826Z"
-                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+              />
             </svg>
           </a>
           <a href="#">
@@ -137,7 +155,8 @@
               <path d="M12.0704 16.34L10.1867 17.9483C9.77318 18.3015 9.13198 18.0807 9.02398 17.5475L8.64062 13.1875"
                     stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M8.64258 13.1853L20.6784 4.33594" stroke="white" stroke-width="1.5" stroke-linecap="round"
-                    stroke-linejoin="round"/>
+                    stroke-linejoin="round"
+              />
             </svg>
           </a>
           <a href="#">
@@ -159,21 +178,21 @@
           <div class="text-green-900 text-sm font-semibold px-4 py-2 bg-white/10">NFT</div>
           <div class="text-green-900 text-sm font-semibold px-4 py-2 bg-white/10">Shibarium</div>
         </div>
-        <div class="text-4xl font-medium mt-12 leading-normal">
-          Next-Gen DeFi Infrastructure on Shibarium
+        <div class="text-[28px] lg:text-4xl w-full font-medium mt-8 lg:mt-12 leading-normal">
+          Next-Gen DeFi Itructure on Shibarium
         </div>
-        <div class="mt-12">
-          <div class="text-lg font-medium uppercase text-white/50 tracking-8">
+        <div class="mt-8 lg:mt-12 text-base lg:text-lg font-medium uppercase text-white/50 tracking-8">
+          <div>
             Total Raise:
             <span class="text-green-900">$100,000</span>
           </div>
-          <div class="text-lg font-medium uppercase text-white/50 tracking-8 mt-4">
+          <div class="mt-4">
             Registration Ends in:
             <span class="text-green-900">1d 7h 25m 20s</span>
           </div>
         </div>
         <button
-          class="mt-12 flex justify-center items-center gap-2 bg-gradient-to-br from-blue-900 to-pink-900 uppercase border border-solid border-white/30 px-[64px] h-14 text-base font-bold tracking-wider">
+          class="mt-8 lg:mt-12 flex justify-center items-center gap-2 bg-gradient-to-br from-blue-900 to-pink-900 uppercase border border-solid border-white/30 px-10 lg:px-[64px] h-14 text-base font-bold tracking-wider">
           Participate Now
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M7.5 8L11 12L7.5 16" stroke="white" stroke-width="1.5" stroke-linecap="round"
@@ -183,22 +202,22 @@
           </svg>
         </button>
       </div>
-      <img class="max-h-[618px] w-full object-cover" src="img/placeholder.png" alt="placeholder">
+      <img class="max-h-96 lg:max-h-[618px] w-full object-cover border border-white/5" src="img/placeholder.png" alt="placeholder">
     </div>
   </section>
-  <section class="mt-52 mx-auto max-w-[1200px]">
-    <h2 class="text-5xl text-center">
+  <section class="mt-36 lg:mt-52 mx-auto max-w-[1200px] px-6 lg:px-0">
+    <h2 class="text-4xl uppercase lg:text-5xl text-center leading-normal">
       <span class="block">L<span class="text-white/60">iv</span>e
       A<span class="text-white/60">n</span>d
       U<span class="text-white/60">pc</span>o<span class="text-white/60">mi</span>ng</span>
       L<span class="text-white/60">au</span>n<span class="text-white/60">ch</span>es
     </h2>
-    <div class="grid grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
       <div class="flex flex-col items-center border border-solid border-white/10 mt-16 mb-80">
-        <img class="h-full w-full object-cover max-h-[264px]" src="img/placeholder.png" alt="placeholder">
-        <div class="flex flex-col p-8 w-full">
-          <div class="flex items-center gap-4 text-2xl font-medium">
-            <img class="w-12 h-12" src="/img/nft.png" alt="nft">
+        <img class="h-full w-full object-cover max-w-96 lg:max-h-[264px] border border-white/5" src="img/placeholder.png" alt="placeholder">
+        <div class="flex flex-col p-6 lg:p-8 w-full">
+          <div class="flex items-center gap-4 text-xl lg:text-2xl font-medium">
+            <img class="h-10 w-10 lg:w-12 lg:h-12" src="/img/nft.png" alt="nft">
             Pixelmon
           </div>
           <div class="flex items-center gap-2 mt-8">
@@ -207,25 +226,25 @@
             <div class="text-green-900 text-sm font-semibold px-4 py-2 bg-white/10">Shibarium</div>
           </div>
           <div class="mt-8">
-            <div class="flex items-center justify-between text-lg font-medium uppercase text-white/50 tracking-8">
+            <div class="flex items-center justify-between text-base lg:text-lg font-medium uppercase text-white/50 tracking-8">
               Total Raise:
               <span class="text-white">$100,000</span>
             </div>
-            <div class="flex items-center justify-between text-lg font-medium uppercase text-white/50 tracking-8 mt-4">
+            <div class="flex items-center justify-between text-base lg:text-lg font-medium uppercase text-white/50 tracking-8 mt-4">
               Ends in:
               <span class="text-green-900">1d 7h 25m 20s</span>
             </div>
-            <div class="flex items-center justify-between text-lg font-medium uppercase text-white/50 tracking-8 mt-4">
+            <div class="flex items-center justify-between text-base lg:text-lg font-medium uppercase text-white/50 tracking-8 mt-4">
               Sale Type:
               <span class="text-white">Ape Launch</span>
             </div>
-            <div class="flex items-center justify-between text-lg font-medium uppercase text-white/50 tracking-8 mt-4">
+            <div class="flex items-center justify-between text-base lg:text-lg font-medium uppercase text-white/50 tracking-8 mt-4">
               Market Maker:
               <span class="text-white">TBA</span>
             </div>
           </div>
           <button
-            class="mt-8 flex justify-center items-center gap-2 bg-gradient-to-br from-blue-900 to-pink-900 uppercase border border-solid border-white/30 px-[64px] h-14 text-base font-bold tracking-wider">
+            class="mt-8 flex justify-center items-center gap-2 bg-gradient-to-br from-blue-900 to-pink-900 uppercase border border-solid border-white/30 px-10 lg:px-[64px] h-14 text-base font-bold tracking-wider">
             Participate Now
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M7.5 8L11 12L7.5 16" stroke="white" stroke-width="1.5" stroke-linecap="round"
@@ -267,7 +286,7 @@
             </div>
           </div>
           <button
-            class="mt-8 flex justify-center items-center gap-2 bg-gradient-to-br from-blue-900 to-pink-900 uppercase border border-solid border-white/30 px-[64px] h-14 text-base font-bold tracking-wider">
+            class="mt-8 flex justify-center items-center gap-2 bg-gradient-to-br from-blue-900 to-pink-900 uppercase border border-solid border-white/30 px-6 lg:px-[64px] h-14 text-base font-bold tracking-wider">
             Participate Now
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M7.5 8L11 12L7.5 16" stroke="white" stroke-width="1.5" stroke-linecap="round"
@@ -309,7 +328,7 @@
             </div>
           </div>
           <button
-            class="mt-8 flex justify-center items-center gap-2 bg-gradient-to-br from-blue-900 to-pink-900 uppercase border border-solid border-white/30 px-[64px] h-14 text-base font-bold tracking-wider">
+            class="mt-8 flex justify-center items-center gap-2 bg-gradient-to-br from-blue-900 to-pink-900 uppercase border border-solid border-white/30 px-6 lg:px-[64px] h-14 text-base font-bold tracking-wider">
             Participate Now
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M7.5 8L11 12L7.5 16" stroke="white" stroke-width="1.5" stroke-linecap="round"
@@ -366,7 +385,7 @@
               </svg>
             </a>
           </div>
-          <hr class="border-white/5 my-8" />
+          <hr class="border-white/5 my-8"/>
           <div>
             <div class="flex items-center justify-between text-lg font-medium uppercase text-white/50 tracking-8">
               ATH ROI:
@@ -430,7 +449,7 @@
               </svg>
             </a>
           </div>
-          <hr class="border-white/5 my-8" />
+          <hr class="border-white/5 my-8"/>
           <div>
             <div class="flex items-center justify-between text-lg font-medium uppercase text-white/50 tracking-8">
               ATH ROI:
@@ -494,7 +513,7 @@
               </svg>
             </a>
           </div>
-          <hr class="border-white/5 my-8" />
+          <hr class="border-white/5 my-8"/>
           <div>
             <div class="flex items-center justify-between text-lg font-medium uppercase text-white/50 tracking-8">
               ATH ROI:
@@ -545,11 +564,11 @@
   </section>
 </main>
 <footer class="border-y border-solid border-white/10 w-full">
-  <div class="mx-auto max-w-[1200px] flex justify-between py-16">
+  <div class="mx-auto max-w-[1200px] flex flex-col lg:flex-row justify-between gap-8 py-8 px-6 lg:px-0 lg:py-16">
     <div class="text-sm text-white/60">Copyright © 2024 Chainmind. All rights reserved.</div>
     <div class="text-sm text-white/60 flex items-center gap-10">
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms of Use</a>
+      <a class="hover:text-white transition" href="#">Privacy Policy</a>
+      <a class="hover:text-white transition" href="#">Terms of Use</a>
     </div>
   </div>
 </footer>
